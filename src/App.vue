@@ -1,9 +1,43 @@
+<template>
+  <section>
+    <header><h1>My friends</h1></header>
+    <ul>
+      <friend-contact></friend-contact>
+      <friend-contact></friend-contact>
+    </ul>
+  </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      friends: [
+        {
+          id: "1",
+          name: "Manuel Lorenz",
+          phone: "01234 5678 991",
+          email: "manuel@localhost.com",
+        },
+        {
+          id: "2",
+          name: "Julie Jones",
+          phone: "09876 543 221",
+          email: "julie@localhost.com",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style>
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 body {
@@ -61,3 +95,4 @@ header {
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
+</style>
