@@ -41,7 +41,6 @@ export default {
   },
   methods: {
     toggleFavoriteStatus(friendID) {
-      console.log(friendID);
       const foundFriend = this.friends.find((friend) => friend.id === friendID);
       foundFriend.isFavorite = !foundFriend.isFavorite;
     },
